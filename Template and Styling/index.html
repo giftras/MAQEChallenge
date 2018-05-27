@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TemplateStyling</title>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<h3>MAQE Forums</h3>
+<h4>Subtitle</h4>
+<h5>Posts</h5>
+<table id="post" class="table table-striped">
+	<tbody>
+		<script id="template" type="text/x-handlebars-template">
+		{{#each this}}
+		<tr>
+			<td>
+				<img src="{{ image_url }}" class="post_pic">
+			</td>
+			<td>
+				<h4>{{ title }}</h6>
+				<p>{{ body }}</p>
+				<p><span class="glyphicon glyphicon-time"></span> {{ time created_at }}</p>
+			</td>
+			
+			<td class="authorinfo">
+				<img src="{{ authorimg author_id }}" class="authorpic">
+				<h4 id="authorname">{{ authorName author_id }}</h4>
+				<p>{{ author_role author_id }}</p>
+				<p><span class="glyphicon glyphicon-map-marker"></span> {{ author_location author_id }}</p>
+
+			</td>
+
+		</tr>
+		{{/each}}
+	</script>
+	</tbody>
+
+</table>
+
+<div class="pagination">
+  <a href="#">Previous</a>
+  <a href="#" class="active">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">7</a>
+  <a href="#">8</a>
+  <a href="#">Next</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/handlebars.js"></script>
+<script type="text/javascript" src="js/moment.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+h2, h3, h4, h5, p{
+	font-family: Helvetica;
+}
+
+.pagination {
+    display: inline-block;
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 500px;
+   
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: red;
+    color: white;
+    border-radius: 60px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 60px;
+}
+.postpic{
+	width: 250px;
+	height: 200px;
+}
+.authorpic{
+	width: 130px;
+	height: 130px;
+	border-radius: 130px;
+
+}
+.authorinfo{
+	width: 250px;
+	text-align: center;
+	border-left: 1px solid;
+	border-color: #ddd;
+}
+
+#authorname{
+	color: red;
+}
